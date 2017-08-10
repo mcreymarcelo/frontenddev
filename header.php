@@ -69,6 +69,10 @@
                                         <a href="atom-fullscreen.php">Fullscreen Image</a>
                                     </li>
 
+                                    <li class="main-nav__items--sub">
+                                        <a href="atom-social.php">Social Media</a>
+                                    </li>
+
                                 </ul>
                             </li>
 

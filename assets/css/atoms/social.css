@@ -1,0 +1,66 @@
+/* SOCIAL MEDIA ICONS */
+.social {
+	display: inline-block;
+	margin: 5px;
+	background: url('../../images/social-sprite.png');
+	width: 83px;
+	height: 83px;
+	overflow: hidden;
+	text-indent: -9999em;
+	transition: all ease-in-out 0.2s;
+}
+
+.social--facebook {
+	background-position: 0 168px;
+	&:hover { background-position: 0 84px; }
+}
+
+.social--flicker {
+	background-position: calc((-1)*(84px)) 168px;
+	&:hover { background-position: calc((-1)*(0+84px)) 84px; }
+}
+
+.social--ball {
+	background-position: calc((-1)*(84px*2)) 168px;
+	&:hover { background-position: calc((-1)*(84px*2)) 84px; }
+}
+
+.social--google {
+	background-position: calc((-1)*(84px*3)) 168px;
+	&:hover { background-position: calc((-1)*(84px*3)) 84px; }
+}
+
+.social--linkedin {
+	background-position: calc((-1)*(84px*3)) 168px;
+	&:hover { background-position: calc((-1)*(84px*3)) 84px; }
+}
+
+.social--pinterest {
+	background-position: calc((-1)*(84px*4)) 168px;
+	&:hover { background-position: calc((-1)*(84px*4)) 84px; }
+}
+
+.social--rss {
+	background-position: calc((-1)*(84px*5)) 168px;
+	&:hover { background-position: calc((-1)*(84px*5)) 84px; }
+}
+
+.social--skype {
+	background-position: calc((-1)*(84px*6)) 168px;
+	&:hover { background-position: calc((-1)*(84px*6)) 84px; }
+}
+
+.social--twitter {
+	background-position: calc((-1)*(84px*7)) 168px;
+	&:hover { background-position: calc((-1)*(84px*7)) 84px; }
+}
+
+.social--vimeo {
+	background-position: calc((-1)*(84px*8)) 168px;
+	&:hover { background-position: calc((-1)*(84px*8)) 84px; }
+}
+
+.social--youtube {
+	background-position: calc((-1)*(84px*9)) 168px;
+	&:hover { background-position: calc((-1)*(84px*9)) 84px; }
+}

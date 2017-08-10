@@ -1,13 +1,16 @@
 /* GENERAL */
-html {
+html,
+body {
 	font-size: 10px;
+	height: 100%;
 }
 
 body {
 	font-family: var(--font_family);
 	font-size: 1.6rem;
 }
-
+main { height: 100%; }
 .main-wrapper {
 	padding-top: 50px;
+	min-height: 80%;
 }

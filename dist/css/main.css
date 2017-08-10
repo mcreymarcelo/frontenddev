@@ -125,18 +125,23 @@ td,th{padding:0}
 
 /* GENERAL */
 
-html {
+html,
+body {
 	font-size: 10px;
+	height: 100%;
 }
 
 body {
 	font-family: 'Slabo 27px', serif;
-	font-size: 16px;
+	font-size: 25.6px;
 	font-size: 1.6rem;
 }
 
+main { height: 100%; }
+
 .main-wrapper {
 	padding-top: 50px;
+	min-height: 80%;
 }
 
 /*------------------------------------*\
@@ -163,7 +168,7 @@ blockquote {
 	margin: 0;
 	padding: 20px 30px;
 	border-left: 5px solid #e8e8e8;
-	font-size: 25px;
+	font-size: 40px;
 	font-size: 2.5rem;
 	background: #f2f2f2;
 }
@@ -273,6 +278,86 @@ img {
 }
 
 .thumb--104:before {padding-top: 40%;}
+
+/* SOCIAL MEDIA ICONS */
+
+.social {
+	display: inline-block;
+	margin: 5px;
+	background: url('../images/social-sprite.png');
+	width: 83px;
+	height: 83px;
+	overflow: hidden;
+	text-indent: -9999em;
+	-webkit-transition: all ease-in-out 0.2s;
+	transition: all ease-in-out 0.2s;
+}
+
+.social--facebook {
+	background-position: 0 168px
+}
+
+.social--facebook:hover {background-position: 0 84px;}
+
+.social--flicker {
+	background-position: -84px 168px
+}
+
+.social--flicker:hover {background-position: -84px 84px;}
+
+.social--ball {
+	background-position: -168px 168px
+}
+
+.social--ball:hover {background-position: -168px 84px;}
+
+.social--google {
+	background-position: -252px 168px
+}
+
+.social--google:hover {background-position: -252px 84px;}
+
+.social--linkedin {
+	background-position: -252px 168px
+}
+
+.social--linkedin:hover {background-position: -252px 84px;}
+
+.social--pinterest {
+	background-position: -336px 168px
+}
+
+.social--pinterest:hover {background-position: -336px 84px;}
+
+.social--rss {
+	background-position: -420px 168px
+}
+
+.social--rss:hover {background-position: -420px 84px;}
+
+.social--skype {
+	background-position: -504px 168px
+}
+
+.social--skype:hover {background-position: -504px 84px;}
+
+.social--twitter {
+	background-position: -588px 168px
+}
+
+.social--twitter:hover {background-position: -588px 84px;}
+
+.social--vimeo {
+	background-position: -672px 168px
+}
+
+.social--vimeo:hover {background-position: -672px 84px;}
+
+.social--youtube {
+	background-position: -756px 168px
+}
+
+.social--youtube:hover {background-position: -756px 84px;}
 
 /*------------------------------------*\
   BASE
@@ -410,7 +495,7 @@ main a {
 
 .brand h1 {margin: 0;float: left;padding: 5px 10px 5px 0}
 
-.brand h1 a {color: black;text-decoration: none}
+.brand h1 a {color: #ff9c11;text-decoration: none}
 
 @media (max-width: 768px) {
 
@@ -493,6 +578,33 @@ main a {
 
 .mobile-nav {
 	display: none;
+}
+
+/* FOOTER */
+
+.footer-main {
+	text-align: center;
+	color: white;
+	background: #282828;
+	padding: 20px 0;
+}
+
+.footer-main h1,
+.footer-main h2,
+.footer-main h3,
+.footer-main h4,
+.footer-main h5,
+.footer-main h6 { 
+	max-width: 500px;
+	margin: 0 auto; 
+	font-family: 'Slabo 27px', serif;
+	background: white;
+	color: black;
+	padding: 5px 20px;
+}
+
+.footer-main h5 {
+	max-width: 300px;
 }
 
 .main-nav {}
