@@ -1,0 +1,13 @@
+/* GENERAL */
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: var(--font_family);
+	font-size: 1.6rem;
+}
+
+.main-wrapper {
+	padding-top: 50px;
+}

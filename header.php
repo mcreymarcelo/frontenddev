@@ -14,104 +14,104 @@
         <link rel="stylesheet" href="dist/css/main.css">
 
     </head>
-    <body class="main-wrapper">
+    <body>
         <main role="main">
-        <header class="brand" role="banner">
-            <div class="container">
-                <h1><a href="index.php">FE DEV Training</a></h1>
-                <div class="mobile-nav">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <header class="brand" role="banner">
+                <div class="container">
+                    <h1><a href="index.php">FE DEV Training</a></h1>
+                    <div class="mobile-nav">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="main-menu">
+                        <ul class="main-nav">
+                            <li class="main-nav__items main-nav--parent"><a href="#">Atoms</a>
+                                <ul class="main-nav__sub">
+                                    <li class="main-nav__items--sub">
+                                        <a href="atom-headings.php">Headings</a>
+                                    </li>
+
+                                    <li class="main-nav__items--sub">
+                                        <a href="atom-paragraph.php">Paragraph</a>
+                                    </li>
+
+                                    <li class="main-nav__items--sub">
+                                        <a href="atom-list.php">Lists</a>
+                                    </li>
+
+                                    <li class="main-nav__items--sub">
+                                        <a href="atom-blockquote.php">Blockquote</a>
+                                    </li>
+
+                                    <li class="main-nav__items--sub">
+                                        <a href="atom-pre.php">Pre</a>
+                                    </li>
+
+                                    <li class="main-nav__items--sub">
+                                        <a href="atom-buttons.php">Buttons</a>
+                                    </li>
+
+                                    <li class="main-nav__items--sub">
+                                        <a href="atom-input.php">Input Fields</a>
+                                    </li>
+
+                                    <li class="main-nav__items--sub">
+                                        <a href="atom-image.php">Images</a>
+                                    </li>
+
+                                    <li class="main-nav__items--sub">
+                                        <a href="atom-image-responsive.php">Responsive Image</a>
+                                    </li>
+
+                                    <li class="main-nav__items--sub">
+                                        <a href="atom-fullscreen.php">Fullscreen Image</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="main-nav__items main-nav--parent"><a href="#">Molecule</a>
+                                <ul class="main-nav__sub">
+                                    <li class="main-nav__items--sub">
+                                        <a href="mole-well.php">Well</a>
+                                    </li>
+
+                                    <li class="main-nav__items--sub">
+                                        <a href="mole-blob.php">Article Blob</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="main-nav__items main-nav--parent"><a href="#">Organism</a>
+                                <ul class="main-nav__sub">
+                                    <li class="main-nav__items--sub">
+                                        <a href="typography.php">Typography</a>
+                                    </li>
+
+                                    <li class="main-nav__items--sub">
+                                        <a href="org-articlelist.php">Article List</a>
+                                    </li>
+
+                                    <li class="main-nav__items--sub">
+                                        <a href="org-articlegrid.php">Article Grid</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="main-nav__items main-nav--parent"><a href="#">Layout</a>
+                                <ul class="main-nav__sub">
+                                    <li class="main-nav__items--sub">
+                                        <a href="layout-cssgrid.php">CSS Grid</a>
+                                    </li>
+
+                                    <li class="main-nav__items--sub">
+                                        <a href="layout-cssflex.php">Flex Grid</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="main-menu">
-                    <ul class="main-nav">
-                        <li class="main-nav__items main-nav--parent"><a href="#">Atoms</a>
-                            <ul class="main-nav__sub">
-                                <li class="main-nav__items--sub">
-                                    <a href="atom-headings.php">Headings</a>
-                                </li>
-
-                                <li class="main-nav__items--sub">
-                                    <a href="atom-paragraph.php">Paragraph</a>
-                                </li>
-
-                                <li class="main-nav__items--sub">
-                                    <a href="atom-list.php">Lists</a>
-                                </li>
-
-                                <li class="main-nav__items--sub">
-                                    <a href="atom-blockquote.php">Blockquote</a>
-                                </li>
-
-                                <li class="main-nav__items--sub">
-                                    <a href="atom-pre.php">Pre</a>
-                                </li>
-
-                                <li class="main-nav__items--sub">
-                                    <a href="atom-buttons.php">Buttons</a>
-                                </li>
-
-                                <li class="main-nav__items--sub">
-                                    <a href="atom-input.php">Input Fields</a>
-                                </li>
-
-                                <li class="main-nav__items--sub">
-                                    <a href="atom-image.php">Images</a>
-                                </li>
-
-                                <li class="main-nav__items--sub">
-                                    <a href="atom-image-responsive.php">Responsive Image</a>
-                                </li>
-
-                                <li class="main-nav__items--sub">
-                                    <a href="atom-fullscreen.php">Fullscreen Image</a>
-                                </li>
-
-                            </ul>
-                        </li>
-
-                        <li class="main-nav__items main-nav--parent"><a href="#">Molecule</a>
-                            <ul class="main-nav__sub">
-                                <li class="main-nav__items--sub">
-                                    <a href="mole-well.php">Well</a>
-                                </li>
-
-                                <li class="main-nav__items--sub">
-                                    <a href="mole-blob.php">Article Blob</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="main-nav__items main-nav--parent"><a href="#">Organism</a>
-                            <ul class="main-nav__sub">
-                                <li class="main-nav__items--sub">
-                                    <a href="typography.php">Typography</a>
-                                </li>
-
-                                <li class="main-nav__items--sub">
-                                    <a href="org-articlelist.php">Article List</a>
-                                </li>
-
-                                <li class="main-nav__items--sub">
-                                    <a href="org-articlegrid.php">Article Grid</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="main-nav__items main-nav--parent"><a href="#">Layout</a>
-                            <ul class="main-nav__sub">
-                                <li class="main-nav__items--sub">
-                                    <a href="layout-cssgrid.php">CSS Grid</a>
-                                </li>
-
-                                <li class="main-nav__items--sub">
-                                    <a href="layout-cssflex.php">Flex Grid</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+            </header>

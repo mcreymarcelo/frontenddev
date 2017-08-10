@@ -1,1 +1,31 @@
-.grid {}
+.grid {
+	display: grid;
+	grid-gap: 10px;
+}
+
+.grid__column {
+	border: 1px solid var(--border_color);
+	padding: 5px 10px;
+}
+
+.grid--12 {
+	grid-template-columns: repeat( auto-fit, minmax( calc( (var(--max_width) / 12) - 10px ), 1fr ) );
+}
+
+.grid--6 {
+	grid-template-columns: repeat( auto-fill, minmax( calc( (var(--max_width) / 6) - 10px ), 1fr ) );
+}
+
+.grid--4 {
+	grid-template-columns: repeat( auto-fill, minmax( calc( (var(--max_width) / 4) - 10px ), 1fr ) );
+}
+
+.grid--3 {
+	grid-template-columns: repeat( auto-fill, minmax( calc( (var(--max_width) / 3) - 10px ), 1fr ) );
+}
+
+@media (--xs){
+	.grid {
+		grid-template-columns: 100%;
+	}
+}

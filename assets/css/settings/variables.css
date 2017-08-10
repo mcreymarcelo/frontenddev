@@ -6,10 +6,18 @@
     
     --primary_color: #28b4ff;
     --primary_color_dark: #1d7bad;
+    --primary_color_light: #38b9ff;
     --secondary_color: #ff9c11;
     --secondary_color_dark: #d37b00;
     --text_color: #282828;
     --border_color: #e8e8e8;
     --gray: #f2f2f2;
     
+
+    @custom-media --xl (min-width: 1200px);
+    @custom-media --lg (max-width: 1199px);
+    @custom-media --md (max-width: 960px);
+    @custom-media --sm (max-width: 768px);
+    @custom-media --xs (max-width: 650px);
+    @custom-media --lg-only (width >= 960px) and (width <= 1199px);
 }

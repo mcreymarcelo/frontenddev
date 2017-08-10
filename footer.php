@@ -1,4 +1,4 @@
-            <footer role="contentinfo">
+            <footer role="contentinfo" class="footer-main">
                 <div class="copy">
                     <p>Copyright &copy; 2017</p>
                 </div>

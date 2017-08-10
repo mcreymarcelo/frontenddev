@@ -1,3 +1,17 @@
 .container {
     max-width: var(--max_width);
+    margin: auto;
+
+    @media (--xl){
+    	max-width: 1200px;
+    }
+
+    @media (--lg-only){
+    	margin: 0 30px;
+    }
+
+    @media (--md){
+    	max-width: 100%;
+    	margin: 0 20px;
+    }
 }

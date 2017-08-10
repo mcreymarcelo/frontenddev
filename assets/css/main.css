@@ -41,6 +41,7 @@
   GENERIC
 \*------------------------------------*/
 @import 'generic/normalize.min.css';
+@import 'generic/general.css';
 
 /*------------------------------------*\
   ATOMS
@@ -50,7 +51,7 @@
 @import 'atoms/blockquote.css';
 @import 'atoms/buttons.css';
 @import 'atoms/input.css';
-@import 'atoms/images.css';
+@import 'atoms/images.css'; 
 
 /*------------------------------------*\
   BASE
