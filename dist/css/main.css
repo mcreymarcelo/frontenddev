@@ -218,7 +218,11 @@ input:not([type='button']):not([type='submit']):not([type='radio']):not([type='c
 
 img {
 	max-width: 100%;
+	-webkit-transition: all ease-in-out 0.1s;
+	transition: all ease-in-out 0.1s
 }
+
+img:hover {-webkit-transform: scale(1.01,1.01);transform: scale(1.01,1.01);}
 
 .fullscreen-page { padding-top: 0; }
 
@@ -238,6 +242,7 @@ img {
 	overflow: hidden;
 	position: relative;
 	z-index: 1
+
 }
 
 .thumb:before {content: '';display: block;}
@@ -250,7 +255,11 @@ img {
 	z-index: 0;
 	-webkit-transform: translate( -50%,-50%);
 	        transform: translate( -50%,-50%);
+	-webkit-transition: all ease-in-out 0.3s;
+	transition: all ease-in-out 0.3s
 }
+
+.thumb img:hover {-webkit-transform: translate( -50%,-50%) scale(1.2,1.2) rotate(10deg);transform: translate( -50%,-50%) scale(1.2,1.2) rotate(10deg);}
 
 .thumb--11 {
 	max-width: 500px
@@ -500,6 +509,18 @@ main a {
 @media (max-width: 768px) {
 
 .brand h1 {float: none;}}
+:root {
+	--scale: 0;
+}
+.brand:after {
+	content: '';
+	display: block;
+	height: 5px;
+	width: var(--scale);
+	background: red;
+	position: absolute;
+	bottom: 0;
+}
 
 .main-menu {
 	display: block;

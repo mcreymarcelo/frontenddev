@@ -8,7 +8,7 @@ const atImport    = require('postcss-import');
 const cssnano     = require('cssnano');
 const browserSync = require('browser-sync');
 const imagemin    = require('gulp-imagemin');
-
+const concat      = require('gulp-concat');
 
 gulp.task('styles', () => {
 
@@ -24,6 +24,14 @@ gulp.task('styles', () => {
 	return gulp.src('assets/css/main.css')
              .pipe(postcss(processors))
              .pipe(gulp.dest('dist/css'));
+
+});
+
+gulp.task('js', () => {
+
+	return gulp.src('assets/js/*.js')
+						 .pipe(concat('all.js'))
+						 .pipe(gulp.dest('dist/js/'));
 
 });
 
@@ -51,6 +59,13 @@ gulp.task('watch:styles', () =>{
 });
 
 
+gulp.task('watch:scripts', () =>{
+
+	gulp.watch('**/*.js', ['js']);
+
+});
+
+
 gulp.task('browser-sync', () => {
 	 /*browserSync({
 		  server: {
@@ -68,10 +83,11 @@ gulp.task('browser-sync', () => {
 });
 
 
-gulp.task('watch', () => {
+gulp.task('watchAll', () => {
 
 	// Watch .css files
 	gulp.watch('**/*.css', ['styles', browserSync.reload]);
+	gulp.watch('**/*.js',  ['js', browserSync.reload]);
 
 	// Watch any files in dist/, reload on change
 	gulp.watch("*.php", browserSync.reload);
@@ -79,4 +95,5 @@ gulp.task('watch', () => {
 });
 
 
-gulp.task('default', ['styles', 'images', 'browser-sync', 'watch']);
+gulp.task('default', ['styles', 'js', 'images']);
+gulp.task('watch',['watchAll','browser-sync']);
