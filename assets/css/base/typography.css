@@ -1,1 +1,5 @@
 body{} 
+
+main a {
+	color: var(--secondary_color);
+}

@@ -1,1 +1,34 @@
-button {}
+.button {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	padding: 10px 20px;
+	margin: 10px 0;
+	text-decoration: none;
+	text-align: center;
+	border: 0;
+	color: white;
+	transition: all ease-in-out 0.2s;
+}
+
+.button--default {
+	background: var(--primary_color);
+
+	&:hover {
+		background: var(--primary_color_dark);
+	}
+}
+
+.button--secondary {
+	background: var(--secondary_color);
+
+	&:hover {
+		background: var(--secondary_color_dark);
+	}
+}
+
+.button--disabled {
+	pointer-events: none;
+	background: var(--gray_dark) !important;
+	color: black;
+}

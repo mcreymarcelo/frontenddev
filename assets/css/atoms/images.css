@@ -3,7 +3,7 @@ img {
 }
 
 .fullscreen-page { padding-top: 0; }
-.footer-main { display: none; }
+.fullscreen-page .footer-main { display: none; }
 .fullscreen {
 	width: 100%;
 	height: 100vh;
@@ -28,21 +28,31 @@ img {
 .thumb img {
 	max-width: none;
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 50%;
+	left: 50%;
 	z-index: 0;
+	transform: translate( -50%,-50%);
 }
 
 .thumb--11 {
-	max-width: 200px;
+	max-width: 500px;
 	&:before { padding-top: calc((1/1)*100%); }
-	& img {
-		transform: translate( -50%,-50%);
-	}
 }
 
 .thumb--169 {
 	max-width: 100%;
 	width: 2000px;
 	&:before { padding-top: calc((9/16)*100%); }
+}
+
+.thumb--43 {
+	max-width: 600px;
+	width: 100%;
+	&:before { padding-top: calc((3/4)*100%); }
+}
+
+.thumb--104 {
+	max-width: 100%;
+	width: 2000px;
+	&:before { padding-top: calc((4/10)*100%); }
 }

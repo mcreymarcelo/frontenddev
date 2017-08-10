@@ -10,7 +10,6 @@
     		<p>Strong: <b>Bold Face</b> and <strong>Strong Point</strong></p>
     		<p>Stylize: <i>Italics</i> and <em>Ephasis</em></p>
     		<p>Code: <code>This is a sample of a code.</code></p>
-    		<p>Pre: <pre>This is a preformatted text.     T      h      i      s  is      a      pre     format      ted     T    E    X    T   .  .  . ...</pre></p>
 
     	</div>
     </div> 

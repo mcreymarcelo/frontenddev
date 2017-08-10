@@ -24,12 +24,13 @@
 
 				<label>File</label>
 				<input type="file" name="" placeholder="This is a sample placeholder....">
-
+				
+				<p>&nbsp;</p>
 				<label>Radio</label>
 				<label><input type="radio" name="radio" placeholder="This is a sample placeholder...."> Option 1</label>
 				<label><input type="radio" name="radio" placeholder="This is a sample placeholder...."> Option 2</label>
 				<label><input type="radio" name="radio" placeholder="This is a sample placeholder...."> Option 3</label>
-
+				<p>&nbsp;</p>
 				<label>Checkbox</label>
 				<label><input type="checkbox" name="checkbox" placeholder="This is a sample placeholder...."> Option 1</label>
 				<label><input type="checkbox" name="checkbox" placeholder="This is a sample placeholder...."> Option 2</label>

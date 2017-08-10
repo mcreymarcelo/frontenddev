@@ -1,3 +1,8 @@
 input:not([type='button'], [type='submit'], [type='radio'],[type='checkbox']){
-    
+	display: block;
+	box-sizing: border-box;
+	border: 1px solid var(--border_color); 
+	width: 100%;
+	padding: 10px 20px;
+	margin: 10px 0;   
 }

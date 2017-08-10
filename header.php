@@ -87,7 +87,7 @@
                             <li class="main-nav__items main-nav--parent"><a href="#">Organism</a>
                                 <ul class="main-nav__sub">
                                     <li class="main-nav__items--sub">
-                                        <a href="typography.php">Typography</a>
+                                        <a href="org-typography.php">Typography</a>
                                     </li>
 
                                     <li class="main-nav__items--sub">
