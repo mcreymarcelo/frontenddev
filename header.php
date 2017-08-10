@@ -101,6 +101,10 @@
                                     <li class="main-nav__items--sub">
                                         <a href="org-articlegrid.php">Article Grid</a>
                                     </li>
+
+                                    <li class="main-nav__items--sub">
+                                        <a href="org-facebook.php">Facebook Feed</a>
+                                    </li>
                                 </ul>
                             </li>
 

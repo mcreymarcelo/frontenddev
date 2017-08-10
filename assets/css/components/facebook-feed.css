@@ -1,0 +1,10 @@
+.facebook-feed {
+	grid-gap: 20px;
+}
+.facebook--item {
+	background: var(--primary_color_light);
+	color: white;
+	padding: 20px;
+	border-radius: 5px;
+	text-align: center;
+}

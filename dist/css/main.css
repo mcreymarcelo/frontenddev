@@ -509,14 +509,12 @@ main a {
 @media (max-width: 768px) {
 
 .brand h1 {float: none;}}
-:root {
-	--scale: 0;
-}
+
 .brand:after {
 	content: '';
 	display: block;
 	height: 5px;
-	width: var(--scale);
+	width: 0;
 	background: red;
 	position: absolute;
 	bottom: 0;
@@ -657,6 +655,18 @@ main a {
 
 .article-grid--excerpt {
 	padding: 20px;
+}
+
+.facebook-feed {
+	grid-gap: 20px;
+}
+
+.facebook--item {
+	background: #38b9ff;
+	color: white;
+	padding: 20px;
+	border-radius: 5px;
+	text-align: center;
 }
 
 /*------------------------------------*\
