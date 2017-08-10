@@ -510,11 +510,14 @@ main a {
 
 .brand h1 {float: none;}}
 
+:root {
+	--scale: 0;
+}
 .brand:after {
 	content: '';
 	display: block;
 	height: 5px;
-	width: 0;
+	width: var(--scale);
 	background: red;
 	position: absolute;
 	bottom: 0;
