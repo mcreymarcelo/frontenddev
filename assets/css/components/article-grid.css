@@ -1,0 +1,12 @@
+/* Article Grid */
+.article-grid {
+	grid-gap: 20px;
+}
+
+.article-grid__item {
+	border: 1px solid var(--border_color);
+}
+
+.article-grid--excerpt {
+	padding: 20px;
+}
