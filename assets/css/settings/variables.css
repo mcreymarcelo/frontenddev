@@ -1,0 +1,15 @@
+:root {
+    --max_width: 1140px;
+    
+    --font_family: 'Slabo 27px', serif;
+    --font_heading: 'Zilla Slab Highlight', cursive;
+    
+    --primary_color: #28b4ff;
+    --primary_color_dark: #1d7bad;
+    --secondary_color: #ff9c11;
+    --secondary_color_dark: #d37b00;
+    --text_color: #282828;
+    --border_color: #e8e8e8;
+    --gray: #f2f2f2;
+    
+}

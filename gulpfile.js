@@ -41,7 +41,7 @@ gulp.task('browser-sync', function() {
 
 	 browserSync.init({
     files: ['**/*.php', '*.php'],
-    proxy: 'build.dev',
+    proxy: 'frontenddev.dev',
   });
 });
 
