@@ -96,4 +96,4 @@ gulp.task('watchAll', () => {
 
 
 gulp.task('default', ['styles', 'js', 'images']);
-gulp.task('watch',['watchAll','browser-sync']);
+gulp.task('watch',['watchAll', 'browser-sync']);

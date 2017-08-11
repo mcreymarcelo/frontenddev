@@ -1,1 +1,156 @@
-.main-nav {}
+.main-menu {
+	display: block;
+	float: right;
+	height: auto;
+	
+
+	@media (--sm){
+		height: 0;
+		float: none;
+		background: var(--primary_color_dark);
+		overflow: hidden;
+		transition: all ease-in-out 0.3s;
+	}
+
+	&.open {
+		height: 100vh;
+		overflow: auto;
+	}
+}
+
+.main-nav {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+	.main-nav__items {
+		display: inline-block;
+		position: relative;
+	}
+
+	.main-nav__items:hover .main-nav__sub { display: block; }
+
+	.main-nav__items a {
+		transition: all ease-in-out 0.2s;
+		display: block;
+		color: white;
+		text-decoration: none;
+		padding: 15px 10px;
+	}
+
+.main-nav__sub {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: none;
+	position: absolute;
+	right: 0;
+}	
+	
+	.main-nav__items--sub a {
+		background: var(--primary_color_dark);
+		padding: 10px 30px;
+		width: 150px;
+		text-align: right;
+
+		&:hover {
+			background: #196993;
+		}
+	}
+
+@media (--sm){
+	.main-nav__items {
+		display: block;
+	}
+		
+		.main-nav__items:first-child { border: 0; }
+		.main-nav__items { border-top: 1px solid #196993; }
+		.main-nav__items a {
+			padding: 5px 20px;
+		}
+	
+	.main-nav__sub {
+		position: static;
+		display: block;
+		max-height: 0;
+		overflow: hidden;
+		transition: all ease-in-out 0.3s;
+	}
+
+	.main-nav__sub.open {
+		max-height: 100vh;
+	}
+
+		
+		.main-nav__items--sub a {
+			font-size: 1.4rem;
+			padding: 5px 30px;
+			border-top: 1px solid #196993;
+			text-align: left;
+			width: auto;
+
+			&:hover {
+				padding-left: 35px;
+			}
+		}
+}
+
+.mobile-nav {
+	display: none;
+	cursor: pointer;
+	position: fixed;
+	top: 14px;
+	right: 20px;
+	width: 30px;
+	height: 20px;
+
+
+	@media (--sm){
+		display: block; 
+	}
+
+	& span {
+		display: block;
+		width: 100%;
+		height: 2px;
+		background: white;
+		position: absolute;
+		left: 0;
+		transition: all ease-in-out 0.2s;
+	}
+
+	& span:first-child {
+		top: 0;
+	}
+
+	& span:nth-child(2){
+		top: 9px;
+	}
+
+	& span:nth-child(3){
+		height: 100%;
+		background: none;
+	}
+
+	& span:last-child {
+		bottom: 0;
+	}
+}
+
+.mobile-nav.open {
+	& span:first-child {
+		top: 10px;
+    transform: rotate(-25deg);
+	}
+
+	& span:nth-child(2){
+		width: 0;
+	}
+
+	& span:last-child {
+		bottom: 8px;
+    transform: rotate(25deg);
+	}
+}

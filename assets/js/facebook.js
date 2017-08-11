@@ -7,6 +7,8 @@ const padeId   = '408384835892044';
 const fbUrl = `https://graph.facebook.com/${padeId}/feed?access_token=${accessId}|${accessTo}`;
 let fbList = document.querySelector('.facebook-feed');
 
+if( fbList){
+
 const fbPromise = new Promise( (resolve, reject) => {
 	let feed = fetch(fbUrl);
 
@@ -31,4 +33,5 @@ fbPromise
 	.catch( err => {
 		console.log(err);
 	});
- 
+	
+}
